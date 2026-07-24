@@ -89,30 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
   revealItems.forEach(item => revealObserver.observe(item));
 
 
-  // ── 5. PACKAGE FILTER ─────────────────────────────
-  const filterBtns    = document.querySelectorAll('.filter-btn');
-  const packageCards  = document.querySelectorAll('.package-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.dataset.filter;
-      packageCards.forEach(card => {
-        if (filter === 'all' || card.dataset.type === filter) {
-          card.classList.remove('hidden');
-          // re-trigger reveal animation
-          card.classList.remove('revealed');
-          setTimeout(() => card.classList.add('revealed'), 60);
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
-
-
   // ── 6. TESTIMONIALS SLIDER ────────────────────────
   const track     = document.getElementById('testimonials-track');
   const prevBtn   = document.getElementById('testi-prev');
@@ -205,16 +181,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 8. CONTACT FORM SUBMIT ────────────────────────
   window.handleContactSubmit = function(event) {
     event.preventDefault();
-    showToast('🦁 Asante sana! Your safari enquiry has been received. We\'ll respond within 2 hours.');
+    showToast('🌅 Asante sana! Your enquiry has been received. Our team will be in touch shortly.');
     event.target.reset();
   };
 
 
   // ── 9. SEARCH BUTTON ──────────────────────────────
   document.querySelector('.search-btn')?.addEventListener('click', () => {
-    showToast('🌍 Searching available safaris for your selection...');
+    showToast('🌍 Finding the perfect adventure for you...');
     setTimeout(() => {
-      document.getElementById('safaris')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
     }, 800);
   });
 
@@ -224,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const input = e.target.querySelector('input');
     if (input?.value) {
-      showToast('🐘 Karibu! You\'ve joined the Tembo Trails wildlife newsletter.');
+      showToast('🌅 Karibu! You\'ve joined the Sunset Adventures newsletter.');
       input.value = '';
     }
   });

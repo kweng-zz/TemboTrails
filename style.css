@@ -4,21 +4,21 @@
 ════════════════════════════════════════ */
  
 :root {
-  --gold:        #C9962B;
-  --gold-light:  #D4A853;
-  --gold-pale:   #F5E6C0;
-  --forest:      #1A3A28;
-  --forest-mid:  #2D5A3D;
-  --forest-light:#4A7B5A;
-  --sunset:      #C05C1E;
-  --sunset-warm: #E07035;
-  --cream:       #FAF6EE;
-  --sand:        #F0E8D5;
-  --brown-dark:  #2D1B0E;
-  --brown-mid:   #4A3020;
-  --text-dark:   #1C1410;
-  --text-mid:    #5C4A35;
-  --text-light:  #8A7560;
+  --gold:        #E8720C;
+  --gold-light:  #F5943D;
+  --gold-pale:   #FDE7CE;
+  --forest:      #0B2545;
+  --forest-mid:  #123A6B;
+  --forest-light:#1D5290;
+  --sunset:      #E8720C;
+  --sunset-warm: #F5943D;
+  --cream:       #FAF8F4;
+  --sand:        #F0E9DD;
+  --brown-dark:  #0B2545;
+  --brown-mid:   #123A6B;
+  --text-dark:   #0B2545;
+  --text-mid:    #3E5875;
+  --text-light:  #7488A0;
   --white:       #FFFFFF;
  
   --font-display: 'Playfair Display', Georgia, serif;
@@ -896,6 +896,78 @@ ul { list-style: none;}
   font-size: 0.78rem;
 }
  
+/* ── SERVICES (Sunset Adventures) ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.service-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+.service-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.service-card:hover .service-img-wrap img { transform: scale(1.06); }
+.service-num {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+.service-body { padding: 1.4rem 1.5rem 1.6rem; flex: 1; }
+.service-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+.service-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.service-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.service-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
 .view-all-wrap {
   text-align: center;
   margin-top: 3rem;
@@ -1509,7 +1581,7 @@ ul { list-style: none;}
 ══════════════════════════════ */
 @media (max-width: 1024px) {
   .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .packages-grid { grid-template-columns: repeat(2, 1fr); }
+  .packages-grid, .services-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
  
@@ -1543,7 +1615,7 @@ ul { list-style: none;}
   .dest-large { grid-column: 1; grid-row: auto; min-height: 300px; }
   .dest-card:not(.dest-large) { min-height: 200px; }
  
-  .packages-grid { grid-template-columns: 1fr; }
+  .packages-grid, .services-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .about-img-secondary { position: static; width: 80%; margin-top: 1rem; }
   .about-badge-float { top: 1rem; right: 1rem; }
