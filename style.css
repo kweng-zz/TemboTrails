@@ -192,7 +192,14 @@ ul { list-style: none;}
     gap: 0.7rem;
     text-decoration: none;
 }
-.logo-icon { font-size: 1.8rem; line-height: 1;}
+.logo-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.35));
+    flex-shrink: 0;
+}
 .logo-main {
     display: block;
     font-family: var(--font-display);
@@ -1641,4 +1648,6 @@ ul { list-style: none;}
   .hero-stats { display: none; }
   .dest-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .logo-icon { width: 36px; height: 36px; }
+  .logo-main { font-size: 1.05rem; }
 }
