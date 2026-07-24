@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── 12. FLOATING WHATSAPP BUTTON ─────────────────
   const wa = document.createElement('a');
-  wa.href   = 'https://wa.me/254700723274';
+  wa.href   = 'https://wa.me/+254784210268';
   wa.target = '_blank';
   wa.setAttribute('aria-label', 'Chat on WhatsApp');
   wa.style.cssText = `
