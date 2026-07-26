@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sunset Adventures | Arrive &amp; Explore Kenya &amp; East Africa</title>
+  <title>Sunset Adventures | Luxury Kenya & East Africa Travel</title>
+  
+  <!-- Desktop/Base CSS - Loads for all devices -->
   <link rel="stylesheet" href="style.css"/>
+  
+  <!-- Mobile CSS - Only loads on screens smaller than 768px -->
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)"/>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
@@ -14,20 +20,21 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="logo">
-        <img src="images/logo.png" alt="Sunset Adventures logo" class="logo-icon"/>
-        <div class="logo-text">
-          <span class="logo-main">Sunset Adventures</span>
-          <span class="logo-sub">Arrive &amp; Explore</span>
-        </div>
-      </a>
+  <img src="images/logo.png" alt="Sunset Adventures logo" class="logo-icon"/>
+  <div class="logo-text">
+    <span class="logo-main">Sunset Adventures</span>
+    <span class="logo-sub">Arrive & Explore</span>
+  </div>
+</a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#booking" class="nav-cta">Plan My Trip</a>
+      <a href="https://wa.me/254784210268" class="nav-cta">Book Now</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,461 +43,394 @@
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#booking" class="mobile-cta">Plan My Trip</a></li>
+        <li><a href="https://wa.me/254784210268" class="mobile-cta">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ═══════════════ HERO ═══════════════ -->
   <section class="hero" id="hero">
-    <div class="hero-bg-slides">
-      <div class="slide active" style="background-image: url('images/yacht.jpg')"></div>
-      <div class="slide" style="background-image: url('images/yacht2.jpg')"></div>
-      <div class="slide" style="background-image: url('images/yacht3.jpg')"></div>
-    </div>
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-      <p class="hero-eyebrow" data-animate>Karibu Kenya &amp; East Africa</p>
-      <h1 class="hero-title" data-animate>
-        Arrive &amp; Explore<br/>
-        <em>Where Adventures become Memories</em>
-      </h1>
-      <p class="hero-subtitle" data-animate>
-       Experience the best of Kenya & East Africa with luxury and 
-       standard yacht cruises, coastal tours, island escapes and 
-       unforgetable safaris. Whether you are exploring the coast 
-       or the wild savannah, Sunset Adventures is here to make every journey
-       extra ordinary
-      </p>
-      <div class="hero-btns" data-animate>
-        <a href="#services" class="btn-primary">Explore Our Services</a>
-        <a href="#about" class="btn-ghost">About Us</a>
-      </div>
-    </div>
-
-    
-
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll Down</span>
-    </div>
-
-    <div class="slide-dots">
-      <button class="dot active" data-slide="0"></button>
-      <button class="dot" data-slide="1"></button>
-      <button class="dot" data-slide="2"></button>
-    </div>
-  </section>
-
-  <!-- ═══════════════ SEARCH BAR ═══════════════ -->
-  <section class="search-section" id="booking">
-    <div class="search-card">
-      <div class="search-field">
-        <label>Destination</label>
-        <select>
-          <option>Wasini Island</option>
-          <option>Malindi</option>
-          <option>Watamu</option>
-          <option>Mombasa</option>
-          <option>Zanzibar, Tanzania</option>
-          <option>Maasai Mara</option>
-          <option>Amboseli</option>
-          <option>Tsavo East</option>
-        </select>
-      </div>
-      <div class="search-divider"></div>
-      <div class="search-field">
-        <label>Experience</label>
-        <select>
-          <option>Luxury Yacht Experience</option>
-          <option>Coastal Day Tour</option>
-          <option>Safari Adventure</option>
-          <option>East Africa Getaway</option>
-          <option>Accommodation Booking</option>
-          <option>Custom Travel Package</option>
-        </select>
-      </div>
-      <div class="search-divider"></div>
-      <div class="search-field">
-        <label>Travel Date</label>
-        <input type="date"/>
-      </div>
-      <div class="search-divider"></div>
-      <div class="search-field">
-        <label>Guests</label>
-        <select>
-          <option>1 Guest</option>
-          <option>2 Guests</option>
-          <option>3 Guests</option>
-          <option>4+ Guests</option>
-        </select>
-      </div>
-      <button class="search-btn">Find My Adventure</button>
-    </div>
-  </section>
-
-  <!-- ═══════════════ WHY KENYA ═══════════════ -->
-  <section class="why-kenya reveal-section">
+      <div class="hero-bg-slides">
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1558907685-9f38cd850e1e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1670786443191-609859a6e762?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+  </div>
+  <div class="hero-pattern"></div>
+    <div class="hero-pattern"></div>
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Why choose Sunset Adventures?</p>
-        <h2 class="section-title">Your Trusted Partner<br/><em>Across East Africa</em></h2>
-        <p class="section-desc">
-          We create unforgettable travel experiences across Kenya and East Africa from 
-          yacht cruises and coastal escapes to island tours and thrilling safaris. Every journey
-          is carefully planned so you can relax explore and create memories that lasts a lifetime.
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-animate>✦ Discover Kenya & East Africa ✦</p>
+        <h1 class="hero-title" data-animate>
+          Arrive & Explore<br/>
+          <em>Where Adventures become Memories </em>
+        </h1>
+        <p class="hero-subtitle" data-animate>
+         Experience the best of Kenya & East Africa with luxury
+         & standard yacht cruises, coastal tours, island Escapes
+         and unforgettable safaris. Whether you are exploring
+         the Coast or the wild Savannah, Sunset Adventures is
+         here to make every journey extraordinary.
+        </p>
+        <div class="hero-btns" data-animate>
+          <a href="#destinations" class="btn-primary">Explore Destinations</a>
+          <a href="#about" class="btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">About Us</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="hero-pagination">
+    <button class="pagination-dot active" data-slide="0" aria-label="Slide 1"></button>
+    <button class="pagination-dot" data-slide="1" aria-label="Slide 2"></button>
+    <button class="pagination-dot" data-slide="2" aria-label="Slide 3"></button>
+  </div>
+  
+    <div class="hero-scroll-indicator">
+      <span>Scroll to discover</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Curated <em>Experiences</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Seven exceptional ways to discover the magic of Kenya and East Africa
         </p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🏅</div>
-          <h3>Memorable Experiences</h3>
-          <p>Every trip is designed to leave you with stories and memories that last a lifetime.</p>
+      <div class="services-grid">
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHoVmEhxzPd3gwNZQt0Vk7tAr2gr1Ywcm0HvTt0KOY8Q4saUxVWl4WUI&s=10" alt="Luxury Yacht" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">01</span>
+            <h3>Yacht Experiences</h3>
+            <p>Private charters, sunset cruises, and group sailing adventures along the Kenyan coast</p>
+            <ul class="service-features">
+              <li>Group joining yacht rides</li>
+              <li>Private charters for events</li>
+              <li>Sunset & dinner cruises</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🧳</div>
-          <h3>Tailored Packages</h3>
-          <p>Whether you are travelling solo, as a couple, with family,
-            friends or a corporate team, we customise every itenerary 
-            to suit your needs.
-          </p>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=800&q=80" alt="Coastal Tours" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">02</span>
+            <h3>Coastal Day Tours</h3>
+            <p>Discover Wasini Island, Malindi, Watamu, and Mombasa's historic charm</p>
+            <ul class="service-features">
+              <li>Wasini Island dhow trips</li>
+              <li>Mombasa Old Town tours</li>
+              <li>Malindi marine parks</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🛡️</div>
-          <h3>Trusted & Reliable</h3>
-          <p>Professionally planned journeys backed by dependable, consistent service.</p>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Safari" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">03</span>
+            <h3>Safari Adventures</h3>
+            <p>Witness the Big Five in Tsavo, Amboseli, and the world-famous Maasai Mara</p>
+            <ul class="service-features">
+              <li>Tsavo East National Reserve</li>
+              <li>Amboseli elephant encounters</li>
+              <li>Maasai Mara migration</li>
+              <li>Shimba Hills National Reserve</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🏷️</div>
-          <h3>Affordable & Transparent</h3>
-          <p>Enjoy competitve pricing with no hidden charges just 
-            honest guidance and exceptional value
-          </p>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://uniglobeletsgotravel.com/wp-content/uploads/2018/11/Beaches.jpg" alt="Zanzibar" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">04</span>
+            <h3>East Africa Getaways</h3>
+            <p>Zanzibar's pristine beaches and Tanzania's wildlife combined in perfect itineraries</p>
+            <ul class="service-features">
+              <li>Zanzibar beach holidays</li>
+              <li>Stone Town cultural tours</li>
+              <li>Tanzania safari combos</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🎧</div>
-          <h3>Dedicated Support</h3>
-          <p>From your first inquiry to the moment your adventure ends,
-            our team is here to support you every step of the way.
-          </p>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://www.safari.co.za/images/kenya-safari-lodges-02-786x416.jpg" alt="Accommodation" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">05</span>
+            <h3>Accommodation Booking</h3>
+            <p>Handpicked hotels, resorts, and luxury villas for every budget and style</p>
+            <ul class="service-features">
+              <li>Beach resorts & hotels</li>
+              <li>Luxury safari lodges</li>
+              <li>Private holiday villas</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
-        <div class="feature-card reveal-item">
-          <div class="feature-icon">🌍</div>
-          <h3>East Africa Expertise</h3>
-          <p>Deep local knowledge across Kenya's coast, Safari Destinations and Zanzibar, we help you 
-            experience East Africa like a local.</p>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Custom Packages" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">06</span>
+            <h3>Customized Packages</h3>
+            <p>Tailored itineraries for couples, families, corporate groups, and special celebrations</p>
+            <ul class="service-features">
+              <li>Honeymoon packages</li>
+              <li>Family adventures</li>
+              <li>Corporate team building</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-item">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Concierge" loading="lazy"/>
+          </div>
+          <div class="service-content">
+            <span class="service-number">07</span>
+            <h3>Travel Planning & Concierge</h3>
+            <p>Complete travel planning, transfers, and dedicated support throughout your journey</p>
+            <ul class="service-features">
+              <li>Personalized itineraries</li>
+              <li>Airport transfers</li>
+              <li>24/7 travel support</li>
+            </ul>
+            <a href="https://wa.me/254784210268" class="service-link">Inquire Now →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════ DESTINATIONS ═══════════════ -->
-  <section class="destinations reveal-section" id="destinations">
+  <section class="destinations" id="destinations">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Choose your Destination</p>
-        <h2 class="section-title">Discover Kenya &amp; East<br/><em>Africa's Wonders</em></h2>
+      <div class="section-header text-center">
+        <span class="section-tag">Choose your Destination</span>
+        <h2 class="section-title">Discover <em>Paradise</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          From pristine beaches to wild savannahs — your perfect destination awaits
+        </p>
       </div>
 
       <div class="dest-grid">
-
-       <div class="dest-card dest-large reveal-item" style="background-image:url('images/wasini.jpg')">
-          <div class="dest-overlay"></div>
-          <div class="dest-content">
+        <div class="dest-card dest-card-large reveal-item" data-dest="wasini">
+          <div class="dest-card-image" style="background-image: url('https://eddiemorstours.co.ke/wp-content/uploads/2023/07/Dolphins-at-Wasini.jpg')"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
             <span class="dest-badge">Most Popular</span>
-            <h3>Wasini Island</h3>
-            <p>Dhow trips, dolphins & coral gardens</p>
-            <a href="#services" class="dest-link">Explore →</a>
+            <div class="dest-card-info">
+              <h3>Wasini Island</h3>
+              <p>Dhow cruises, dolphins & coral gardens</p>
+              <div class="dest-card-actions">
+                <button class="dest-info-btn" data-dest="wasini">View Details</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="dest-card reveal-item" style="background-image:url('images/mombasatour.jpg')">
-          <div class="dest-overlay"></div>
-          <div class="dest-content">
-            <h3>Mombasa - City Tour</h3>
-            <p>Visit the island of Mombasa</p>
-            <a href="#services" class="dest-link">Explore →</a>
+        <div class="dest-card reveal-item" data-dest="mombasa">
+          <div class="dest-card-image" style="background-image: url('https://i.content4travel.com/seeplaces/temp/mombasa-city-tour-(half-day)-mombasa-kenya-RuXBQmDXoEijAGp3u6MG9w.webp')"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-card-info">
+              <h3>Mombasa City</h3>
+              <p>Historic island & coastal culture</p>
+              <div class="dest-card-actions">
+                <button class="dest-info-btn" data-dest="mombasa">View Details</button>
+                
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="dest-card reveal-item" style="background-image:url('https://images.unsplash.com/photo-1708119063168-4785d1359824?q=80&w=1374&auto=format&fit=crop')">
-          <div class="dest-overlay"></div>
-          <div class="dest-content">
-            <h3>Malindi - Full Day Tour</h3>
-            <p>Marine parks & Swahili coast charm</p>
-            <a href="#services" class="dest-link">Explore →</a>
+        <div class="dest-card reveal-item" data-dest="malindi">
+          <div class="dest-card-image" style="background-image: url('https://images.unsplash.com/photo-1758040216495-5bbaefe6e4c6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-card-info">
+              <h3>Malindi</h3>
+              <p>Marine parks & Swahili charm</p>
+              <div class="dest-card-actions">
+                <button class="dest-info-btn" data-dest="malindi">View Details</button>
+                
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="dest-card reveal-item" style="background-image:url('images/tsavo.avif')">
-          <div class="dest-overlay"></div>
-          <div class="dest-content">
-            <h3>Tsavo East</h3>
-            <p>Home to the Great Elephants</p>
-            <a href="#services" class="dest-link">Explore →</a>
+        <div class="dest-card reveal-item" data-dest="tsavo">
+          <div class="dest-card-image" style="background-image: url('https://images.unsplash.com/photo-1732548314474-2aff3b4e8e55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHNhdm8lMjBlYXN0JTIwbmF0aW9uYWwlMjBwYXJrfGVufDB8fDB8fHww')"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-card-info">
+              <h3>Tsavo East</h3>
+              <p>Home of the great elephants</p>
+              <div class="dest-card-actions">
+                <button class="dest-info-btn" data-dest="tsavo">View Details</button>
+                
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="dest-card reveal-item" style="background-image:url('images/zanzibar.avif')">
-          <div class="dest-overlay"></div>
-          <div class="dest-content">
-            <h3>Zanzibar & Tanzania</h3>
-            <p>Experience the rich Swahili culture</p>
-            <a href="#services" class="dest-link">Explore →</a>
+        <div class="dest-card reveal-item" data-dest="zanzibar">
+          <div class="dest-card-image" style="background-image: url('https://images.unsplash.com/photo-1610208738451-46dcfde84295?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-card-info">
+              <h3>Zanzibar</h3>
+              <p>Exotic island & spice paradise</p>
+              <div class="dest-card-actions">
+                <button class="dest-info-btn" data-dest="zanzibar">View Details</button>
+                
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ OUR SERVICES ═══════════════ -->
-  <section class="services reveal-section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Our Services</p>
-        <h2 class="section-title">Everything You Need<br/><em>For Your Next Trip</em></h2>
-        <p class="section-desc">Your dream trip, our perfect plan — seven ways we bring Kenya & East Africa to life.</p>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="images/yacht.jpg" alt="Luxury Yacht Experiences" loading="lazy"/>
-            <span class="service-num">1</span>
-          </div>
-          <div class="service-body">
-            <h3>Yacht Experiences</h3>
-            <ul class="service-list">
-              <li>Group Joining Yacht Rides</li>
-              <li>Private Yacht Charters</li>
-              <li>Sunset Cruises</li>
-              <li>Birthdays, Proposals & Anniversaries</li>
-              <li>Corporate & Team Building</li>
-              <li>Graduations & Customized Events</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="images/wasini.jpg" alt="Coastal Day Tours" loading="lazy"/>
-            <span class="service-num">2</span>
-          </div>
-          <div class="service-body">
-            <h3>Coastal Day Tours</h3>
-            <ul class="service-list">
-              <li>Wasini Island</li>
-              <li>Malindi</li>
-              <li>Watamu</li>
-              <li>Mombasa City Tours</li>
-              <li>Customized Coastal Excursions</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?q=80&w=1470&auto=format&fit=crop" alt="Safari Adventures" loading="lazy"/>
-            <span class="service-num">3</span>
-          </div>
-          <div class="service-body">
-            <h3>Safari Adventures</h3>
-            <ul class="service-list">
-              <li>Tsavo East National Park</li>
-              <li>Amboseli National Park</li>
-              <li>Maasai Mara National Reserve</li>
-              <li>Shimba Hills National Reserve</li>
-              <li>Day Trips, Weekend & Multi-day Safaris</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1470&auto=format&fit=crop" alt="East Africa Getaways" loading="lazy"/>
-            <span class="service-num">4</span>
-          </div>
-          <div class="service-body">
-            <h3>East Africa Getaways</h3>
-            <ul class="service-list">
-              <li>Zanzibar, Tanzania</li>
-              <li>Accommodation & excursions included</li>
-              <li>Transport guidance & unforgettable island experiences</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1470&auto=format&fit=crop" alt="Accommodation Booking" loading="lazy"/>
-            <span class="service-num">5</span>
-          </div>
-          <div class="service-body">
-            <h3>Accommodation Booking</h3>
-            <ul class="service-list">
-              <li>Hotels & Beach Resorts</li>
-              <li>Boutique Hotels</li>
-              <li>Airbnb & BnBs</li>
-              <li>Holiday Apartments & Luxury Villas</li>
-              <li>Group Accommodation</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1470&auto=format&fit=crop" alt="Private & Customized Travel Packages" loading="lazy"/>
-            <span class="service-num">6</span>
-          </div>
-          <div class="service-body">
-            <h3>Private & Customized Packages</h3>
-            <ul class="service-list">
-              <li>Couples, Families & Friends</li>
-              <li>Honeymoons & Special Celebrations</li>
-              <li>Schools & Institutions</li>
-              <li>Corporate Groups & Vacation Planning</li>
-              <li>Weekend Getaways</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-card reveal-item">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1470&auto=format&fit=crop" alt="Travel Planning & Concierge Services" loading="lazy"/>
-            <span class="service-num">7</span>
-          </div>
-          <div class="service-body">
-            <h3>Travel Planning &amp; Concierge</h3>
-            <ul class="service-list">
-              <li>Personalized itinerary planning</li>
-              <li>Accommodation reservations</li>
-              <li>Activity & excursion bookings</li>
-              <li>Airport transfers & group coordination</li>
-              <li>Celebration planning & travel consultation</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="view-all-wrap">
-        <a href="https://wa.me/+254784210268" class="btn-primary">Let's Plan Your Next Adventure</a>
+  <!-- ═══════════════ DESTINATION MODAL ═══════════════ -->
+  <div class="modal-overlay" id="destModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-hero" id="modalHero"></div>
+      <div class="modal-body">
+        <span class="modal-badge" id="modalBadge"></span>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-meta" id="modalMeta"></p>
+        <div class="modal-highlights" id="modalHighlights"></div>
+        <h4 class="modal-subheading">Tour Packages & Pricing</h4>
+        <div class="modal-pricing" id="modalPricing"></div>
+        <a href="#" class="modal-cta-btn" id="modalCta" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.87 9.87 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.07c-.25.7-1.24 1.28-2.03 1.45-.55.12-1.26.21-3.66-.79-3.07-1.27-5.05-4.39-5.2-4.6-.15-.2-1.24-1.65-1.24-3.15s.78-2.23 1.06-2.54c.28-.31.61-.38.82-.38.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.16.13.34.02.55-.1.2-.16.33-.31.51-.15.18-.32.4-.46.53-.15.15-.31.31-.13.61.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.16.49.13.67-.08.19-.2.79-.92 1-1.24.21-.31.42-.26.71-.16.28.11 1.79.85 2.1 1 .31.16.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+          Book via WhatsApp
+        </a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- ═══════════════ ABOUT ═══════════════ -->
-  <section class="about reveal-section" id="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-imgs reveal-item">
+        <div class="about-images reveal-item">
           <div class="about-img-main">
-            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1470&auto=format&fit=crop" alt="Sunset Adventures dhow trip"/>
+            <img src="images/wasini2.jpg" alt="Kenya coast" loading="lazy"/>
           </div>
-          <div class="about-img-secondary">
-            <img src="images/yacht3.jpg" alt="Yacht experience"/>
+          <div class="about-img-overlay">
+            <img src="images/founder2.jpg" alt="Safari" loading="lazy"/>
           </div>
-          <div class="about-badge-float">
-            <span class="badge-num">7</span>
-            <span class="badge-text">Core<br/>Services</span>
+          <div class="about-experience-badge">
+            <span class="badge-number">15+</span>
+            <span class="badge-text">Years of<br/>Excellence</span>
           </div>
         </div>
-
-        <div class="about-text reveal-item">
-          <p class="eyebrow">Our Story</p>
-          <h2 class="section-title">Arrive Today,<br/><em>Explore Forever</em></h2>
+        <div class="about-content reveal-item">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">Crafting <em>Unforgettable</em> Adventures</h2>
           <p class="about-lead">
-            Sunset Adventures creates unforgettable travel experiences by connecting people with
-            the beauty of Kenya & East Africa through professional planning and outstanding service.
+            At Sunset Adventures, we don't just plan trips — we create transformative 
+            experiences that connect you with the soul of East Africa.
           </p>
-          <p>
-            Our mission is to provide high-quality, reliable and memorable travel experiences through
-            careful curation, from luxury yacht sunsets on the coast to safaris across the savanna.
-            Our vision is to become East Africa's leading travel and lifestyle brand — inspiring
-            unforgettable adventures through exceptional service and personalized solutions.
+          <p class="about-text">
+            From the moment you arrive to your final sunset, our team ensures every detail 
+            is perfect. Whether it's a luxury yacht cruise, an exhilarating safari, or a 
+            cultural journey through ancient Swahili towns, we bring Kenya's magic to life 
+            with professionalism and passion.
           </p>
-          <ul class="about-highlights">
-            <li><span class="check">✓</span> Professionally planned itineraries</li>
-            <li><span class="check">✓</span> Trusted & reliable, affordable & transparent</li>
-            <li><span class="check">✓</span> Tailored experiences for every occasion</li>
-            <li><span class="check">✓</span> Dedicated support, start to finish</li>
-          </ul>
-          <a href="https://wa.me/+254784210268" class="btn-primary">Let's Plan Your Trip</a>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feature-check">✓</span>
+              <span>Expertly curated itineraries</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-check">✓</span>
+              <span>Transparent pricing, no hidden costs</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-check">✓</span>
+              <span>Dedicated support from start to finish</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-check">✓</span>
+              <span>Tailored experiences for every traveler</span>
+            </div>
+          </div>
+          <a href="https://wa.me/254784210268" class="btn-primary">Start Planning Your Trip</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ EXPERIENCE BANNER ═══════════════ -->
-  <section class="experience-banner">
-    <div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&w=1800&q=80')"></div>
-    <div class="exp-overlay"></div>
-    <div class="exp-content">
-      <p class="eyebrow" style="color:#F5943D">Our Promise</p>
-      <h2>"Your dream trip,<br/><em>our perfect plan."</em></h2>
-      <a href="#services" class="btn-primary">Start Your Journey</a>
     </div>
   </section>
 
   <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
-  <section class="testimonials reveal-section" id="testimonials">
+  <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">What Travellers Say</p>
-        <h2 class="section-title">Stories from Our<br/><em>Adventures</em></h2>
+      <div class="section-header text-center">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title" style="color: var(--white);">What Our <em>Travelers Say</em></h2>
       </div>
 
       <div class="testimonials-slider" id="testimonials-slider">
         <div class="testimonials-track" id="testimonials-track">
-
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">"Our sunset cruise off Mombasa was flawless from start to finish. The Sunset Adventures team handled every detail — we just showed up and enjoyed the ride."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">SR</div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Our Wasini Island dhow trip was absolutely magical. Sunset Adventures handled everything perfectly — from pickup to the seafood lunch on the island. We spotted dolphins and snorkeled in crystal clear waters. Unforgettable!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SR</div>
               <div>
-                <strong>Sarah Robins</strong>
+                <strong>Sarah Richards</strong>
                 <span>Nairobi, Kenya</span>
               </div>
             </div>
           </div>
 
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">"They planned our engagement on a private yacht charter and it was beyond what we imagined. Transparent pricing, dedicated support, zero stress."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">MP</div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"We booked a private yacht for our anniversary and it exceeded all expectations. The crew was professional, the sunset views were breathtaking, and the dinner was exquisite. Thank you for making our special day perfect!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MP</div>
               <div>
-                <strong>Marcus & Paula Chen</strong>
-                <span>Singapore</span>
+                <strong>Marcus & Paula</strong>
+                <span>London, UK</span>
               </div>
             </div>
           </div>
 
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">"Our Zanzibar getaway was fully organized — accommodation, excursions and transport all sorted. It felt like travelling with friends who know the region inside out."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">LM</div>
-              <div>
-                <strong>Leila Mensah</strong>
-                <span>London, United Kingdom</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">"From the Maasai Mara safari to a Wasini Island day tour, every trip was tailored to us. Professional, reliable, and genuinely dedicated to getting it right."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">AK</div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Our 5-day Zanzibar getaway was flawlessly organized. The Stone Town tour, spice farm visit, and beach resort were all top-notch. It felt like traveling with a local friend who knows all the best spots."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
               <div>
                 <strong>Andreas König</strong>
                 <span>Munich, Germany</span>
@@ -498,127 +438,139 @@
             </div>
           </div>
 
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The Tsavo East safari was incredible! We saw elephants, lions, and even a leopard. Our guide was knowledgeable and the lodge was beautiful. Sunset Adventures delivers exactly what they promise."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LM</div>
+              <div>
+                <strong>Leila Mensah</strong>
+                <span>Accra, Ghana</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="testi-controls">
-        <button class="testi-btn" id="testi-prev">←</button>
-        <div class="testi-dots-wrap" id="testi-dots"></div>
-        <button class="testi-btn" id="testi-next">→</button>
+      <div class="testimonials-controls">
+        <button class="testi-btn" id="testiPrev">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext">→</button>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════ GALLERY ═══════════════ -->
-  <section class="gallery reveal-section" id="gallery">
+  <section class="gallery-section" id="gallery">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Wild &amp; Wonderful Moments</p>
-        <h2 class="section-title">Through the<br/><em>Lens of Sunset Adventures</em></h2>
+      <div class="section-header text-center">
+        <span class="section-tag">Moments</span>
+        <h2 class="section-title">Through the <em>Lens</em></h2>
       </div>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item reveal-item"><img src="images/mambrui.jpg" alt="Mambrui Beach"/></div>
-      <div class="gallery-item reveal-item"><img src="images/citytour.jpg" alt="Fort-Jesus Tour"/></div>
-      <div class="gallery-item reveal-item"><img src="images/tour.jpg" alt="City Tour"/></div>      
-      <div class="gallery-item reveal-item"><img src="images/yacht2.jpg" alt="Yacht Cruise"/></div>
-     <div class="gallery-item reveal-item"><img src="images/yacht4.jpg" alt="Yacht Cruise"/></div>
-      <div class="gallery-item reveal-item"><img src="images/founder2.jpg" alt="People on a yacht"/></div>
-      <div class="gallery-item reveal-item"><img src="images/founder.jpg" alt="Yacht Cruise"/></div>
-      <div class="gallery-item reveal-item"><img src="images/swimming.jpg" alt="People swimming"/></div>
+      <div class="gallery-item reveal-item">
+        <img src="https://images.unsplash.com/photo-1610208738451-46dcfde84295?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHphbnppYmFyJTIwaG90ZWxzfGVufDB8fDB8fHww" alt="Dhow boat" loading="lazy"/>
+      </div>
+      <div class="gallery-item reveal-item">
+        <img src="images/yacht2.jpg" alt="Yacht" loading="lazy"/>
+      </div>
+      <div class="gallery-item reveal-item">
+        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80" alt="Safari" loading="lazy"/>
+      </div>
+      <div class="gallery-item reveal-item">
+        <img src="https://images.unsplash.com/photo-1566291242506-6f76e4ab7981?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coast" loading="lazy"/>
+      </div>
+      <div class="gallery-item reveal-item">
+        <img src="https://images.unsplash.com/photo-1618149709929-9a2a3296c067?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elephants" loading="lazy"/>
+      </div>
+      <div class="gallery-item reveal-item">
+        <img src="https://images.unsplash.com/photo-1536938731386-c803cbb43afe?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marine" loading="lazy"/>
+      </div>
     </div>
   </section>
 
-  <!-- ═══════════════ NEWSLETTER ═══════════════ -->
-  <section class="newsletter reveal-section">
-    <div class="container">
-      <div class="newsletter-card">
-        <h2>Get the Spirit of<br/><em>Sunset Adventures in Your Inbox</em></h2>
-        <p>Travel inspiration, seasonal offers and new experiences across Kenya & East Africa — delivered monthly.</p>
-        <form class="nl-form" onsubmit="return false;">
-          <input type="email" placeholder="Enter your email address"/>
-          <button type="submit">Subscribe</button>
-        </form>
-        <p class="nl-note">No spam. Just adventures. Unsubscribe anytime.</p>
-      </div>
+  <!-- ═══════════════ CTA BANNER ═══════════════ -->
+  <section class="cta-banner">
+    <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1800&q=80')"></div>
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <span class="section-tag" style="color: var(--gold-light);">Ready for Adventure?</span>
+      <h2>"Your dream trip,<br/><em>our perfect plan."</em></h2>
+      <a href="https://wa.me/254784210268" class="btn-primary" style="font-size: 1rem; padding: 18px 40px;">Let's Plan Together</a>
     </div>
   </section>
 
   <!-- ═══════════════ CONTACT ═══════════════ -->
-  <section class="contact reveal-section" id="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info reveal-item">
-          <p class="eyebrow">Get In Touch</p>
-          <h2 class="section-title">Let's Plan Your<br/><em>Next Adventure</em></h2>
-          <p>Our team is ready to craft your perfect itinerary across Kenya & East Africa. Reach us however suits you best.</p>
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Plan Your <em>Journey</em></h2>
+          <p class="contact-desc">Our team is ready to craft your perfect East African adventure. Reach out via any channel below.</p>
+          
+          <a href="https://wa.me/254784210268" class="contact-wa-link" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.87 9.87 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.07c-.25.7-1.24 1.28-2.03 1.45-.55.12-1.26.21-3.66-.79-3.07-1.27-5.05-4.39-5.2-4.6-.15-.2-1.24-1.65-1.24-3.15s.78-2.23 1.06-2.54c.28-.31.61-.38.82-.38.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.16.13.34.02.55-.1.2-.16.33-.31.51-.15.18-.32.4-.46.53-.15.15-.31.31-.13.61.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.16.49.13.67-.08.19-.2.79-.92 1-1.24.21-.31.42-.26.71-.16.28.11 1.79.85 2.1 1 .31.16.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+            Chat on WhatsApp
+          </a>
 
           <div class="contact-details">
             <div class="contact-item">
-              <span class="c-icon">📞</span>
+              <span class="contact-icon">📞</span>
               <div>
-                <strong>Call</strong>
-                <span>+254 784 210 268</span></br>
-                <span>+254 715 470 738</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span class="c-icon">💬</span>
-              <div>
-                <strong>WhatsApp</strong>
+                <strong>Call Us</strong>
                 <span>+254 784 210 268</span>
               </div>
             </div>
             <div class="contact-item">
-              <span class="c-icon">📍</span>
+              <span class="contact-icon">📍</span>
               <div>
                 <strong>Coverage</strong>
-                <span>Kenya & East Africa (Coast, Safari Circuits & Zanzibar)</span>
+                <span>Kenya Coast, Safari Circuits & Zanzibar</span>
               </div>
             </div>
             <div class="contact-item">
-              <span class="c-icon">🌐</span>
+              <span class="contact-icon">🌐</span>
               <div>
                 <strong>Follow Us</strong>
-                <span>Sunset Adventures — TikTok, Instagram & Facebook</span>
+                <span>@sunsetadventures — TikTok, Instagram & Facebook</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="contact-form reveal-item">
-          <form onsubmit="handleContactSubmit(event)">
+        <div class="contact-form-wrapper reveal-item">
+          <form class="contact-form" onsubmit="return handleContactSubmit(event)">
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" placeholder="John"/>
+                <input type="text" placeholder="John" required/>
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Doe"/>
+                <input type="text" placeholder="Doe" required/>
               </div>
             </div>
             <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="john@example.com"/>
+              <label>Email</label>
+              <input type="email" placeholder="john@example.com" required/>
             </div>
             <div class="form-group">
-              <label>Service of Interest</label>
+              <label>Interest</label>
               <select>
                 <option>Luxury Yacht Experience</option>
                 <option>Coastal Day Tour</option>
                 <option>Safari Adventure</option>
                 <option>East Africa Getaway</option>
-                <option>Accommodation Booking</option>
-                <option>Private & Customized Package</option>
-                <option>Travel Planning & Concierge</option>
+                <option>Custom Package</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Your Message</label>
+              <label>Message</label>
               <textarea rows="4" placeholder="Tell us about your dream trip..."></textarea>
             </div>
-            <button type="submit" class="btn-primary full-width">Send Enquiry →</button>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Enquiry →</button>
           </form>
         </div>
       </div>
@@ -627,62 +579,49 @@
 
   <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="#" class="logo">
-              <img src="images/logo.png" alt="Sunset Adventures logo" class="logo-icon"/>
-              <div class="logo-text">
-                <span class="logo-main" style="color:#fff">Sunset Adventures</span>
-                <span class="logo-sub" style="color:#F5943D">Arrive & Explore</span>
-              </div>
-            </a>
-            <p>Arrive Today, Explore Forever. Creating memories that last a lifetime across Kenya & East Africa.</p>
-            <div class="social-links">
-              <a href="#" class="social-link">f</a>
-              <a href="#" class="social-link">◎</a>
-              <a href="#" class="social-link">♪</a>
-            </div>
-          </div>
-
-          <div class="footer-col">
-            <h4>Destinations</h4>
-            <ul>
-              <li><a href="#">Wasini Island</a></li>
-              <li><a href="#">Malindi</a></li>
-              <li><a href="#">Watamu</a></li>
-              <li><a href="#">Mombasa</a></li>
-              <li><a href="#">Zanzibar, Tanzania</a></li>
-              <li><a href="#">Maasai Mara, Amboseli & Tsavo</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#services">Luxury Yacht Experiences</a></li>
-              <li><a href="#services">Coastal Day Tours</a></li>
-              <li><a href="#services">Safari Adventures</a></li>
-              <li><a href="#services">East Africa Getaways</a></li>
-              <li><a href="#services">Accommodation Booking</a></li>
-              <li><a href="#services">Travel Planning & Concierge</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom: 1rem;">
+  <img src="images/logo.png" alt="Sunset Adventures logo" class="logo-icon"/>
+  <div class="logo-text">
+    <span class="logo-main" style="color: var(--white);">Sunset Adventures</span>
+    <span class="logo-sub" style="color: var(--gold-light);">Arrive & Explore</span>
+  </div>
+</div>
+          <p>Creating extraordinary travel experiences across Kenya and East Africa since 2011.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#">Wasini Island</a></li>
+            <li><a href="#">Malindi & Watamu</a></li>
+            <li><a href="#">Mombasa</a></li>
+            <li><a href="#">Tsavo East</a></li>
+            <li><a href="#">Zanzibar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Yacht Experiences</a></li>
+            <li><a href="#">Coastal Tours</a></li>
+            <li><a href="#">Safari Adventures</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Custom Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
+      <div class="footer-bottom">
         <p>© 2026 Sunset Adventures. All rights reserved.</p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
@@ -692,8 +631,13 @@
     </div>
   </footer>
 
-  <!-- Toast notification -->
+  <!-- Toast Notification -->
   <div class="toast" id="toast"></div>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/254784210268" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.87 9.87 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.07c-.25.7-1.24 1.28-2.03 1.45-.55.12-1.26.21-3.66-.79-3.07-1.27-5.05-4.39-5.2-4.6-.15-.2-1.24-1.65-1.24-3.15s.78-2.23 1.06-2.54c.28-.31.61-.38.82-.38.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.16.13.34.02.55-.1.2-.16.33-.31.51-.15.18-.32.4-.46.53-.15.15-.31.31-.13.61.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.16.49.13.67-.08.19-.2.79-.92 1-1.24.21-.31.42-.26.71-.16.28.11 1.79.85 2.1 1 .31.16.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+  </a>
 
   <script src="script.js"></script>
 </body>
