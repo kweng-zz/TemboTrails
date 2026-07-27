@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 3. DESTINATION MODAL ──────────────────────────
   const WA_NUMBER = '254784210268';
 
-  const destinationData = {
+ const destinationData = {
     wasini: {
       name: 'Wasini Island',
       badge: 'Most Popular',
@@ -56,21 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
       meta: 'South Coast, Kenya · Full Day Tour (7-8 hours)',
       highlights: ['⛵ Dhow Sailing', '🐬 Dolphin Spotting', '🤿 Coral Snorkeling', '🍤 Seafood Lunch'],
       pricing: [
-        { tier: 'Group Joining', price: 'KES 4,500', period: 'per person' },
-        { tier: 'Private Charter', price: 'KES 28,000', period: 'per group' },
-        { tier: 'Child (3-12yrs)', price: 'KES 2,500', period: 'per child' }
+        { tier: 'Kenyan Residents', price: 'KES 4,999', period: 'per person' },
+        { tier: 'Non-Residents', price: '$85 USD', period: 'per person' },
+        { tier: 'Private Tour', price: 'From $150 USD', period: 'per person (depends on group size)' }
       ]
     },
     mombasa: {
       name: 'Mombasa City Tour',
       badge: '',
       image: 'https://easternvacations-kenya.com/wp-content/uploads/2023/09/Mombasa-city-tursks-tour-evacations.jpg',
-      meta: 'Mombasa Island, Kenya · Half or Full Day',
-      highlights: ['🏰 Fort Jesus', '🏛️ Old Town', '🐘 Moi Avenue Tusks', '🌶️ Spice Market'],
+      meta: 'Mombasa Island, Kenya · Half Day (4-5 hrs) or Full Day (7-8 hrs)',
+      highlights: ['🏰 Fort Jesus', '🏛️ Old Town', '🕌 Hindu Temple', '🐘 Haller Park', '🌊 Mama Ngina Waterfront', '🌶️ Spice Market'],
       pricing: [
-        { tier: 'Half Day', price: 'KES 3,000', period: 'per person' },
-        { tier: 'Full Day', price: 'KES 5,500', period: 'per person' },
-        { tier: 'Private Tour', price: 'KES 15,000', period: 'per group' }
+        { tier: 'Half Day Tour', price: 'From $60 USD', period: 'per person (depends on group size)' },
+        { tier: 'Full Day Tour', price: 'From $90 USD', period: 'per person' }
       ]
     },
     malindi: {
@@ -89,12 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Tsavo East Safari',
       badge: '',
       image: 'https://images.unsplash.com/photo-1658926342182-512ff6dcc08e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      meta: 'Tsavo East National Park · Day Trip or Multi-day',
-      highlights: ['🐘 Elephant Herds', '💦 Lugard Falls', '🦁 Big Cats', '🚙 4×4 Game Drives'],
+      meta: 'Tsavo East National Park · Day Trip or Multi-day Safari',
+      highlights: ['🐘 Elephant Herds', '🦁 Big Cats', '💦 Lugard Falls', '🪨 Mudanda Rock', '🚙 4×4 Game Drives'],
       pricing: [
-        { tier: 'Day Trip', price: 'KES 9,500', period: 'per person' },
-        { tier: 'Weekend (2D/1N)', price: 'KES 22,000', period: 'per person' },
-        { tier: 'Multi-day', price: 'From KES 35,000', period: 'per person' }
+        { tier: 'Day Trip (Group Joining)', price: 'KES 7,500', period: 'per person' },
+        { tier: 'Private Day Safari', price: 'From $280 USD', period: 'per person' },
+        { tier: 'Multi-Day Safari', price: 'From $380 USD', period: 'per person' }
       ]
     },
     zanzibar: {
@@ -102,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: '',
       image: 'https://images.unsplash.com/photo-1683322753580-6bf07759dbfe?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       meta: 'Zanzibar, Tanzania · 3-7 Nights',
-      highlights: ['🏛️ Stone Town', '🌶️ Spice Farm Tour', '🏖️ East Coast Beaches', '⛵ Sunset Dhow Cruise'],
+      highlights: ['🏛️ Stone Town', '🌶️ Spice Farm Tour', '🐢 Turtle Aquarium', '🤿 Snorkelling', '🏖️ East Coast Beaches', '⛵ Sunset Dhow Cruise'],
       pricing: [
-        { tier: '3 Nights', price: 'From KES 65,000', period: 'per person' },
-        { tier: '5 Nights', price: 'From KES 98,000', period: 'per person' },
-        { tier: '7 Nights Luxury', price: 'From KES 155,000', period: 'per person' }
+        { tier: '3 Nights', price: 'From KES 55,000', period: 'per person' },
+        { tier: '5 Nights', price: 'From KES 85,000', period: 'per person' },
+        { tier: '7 Nights', price: 'From KES 110,000', period: 'per person' }
       ]
     }
   };
