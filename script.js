@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     zanzibar: {
       name: 'Zanzibar & Tanzania',
       badge: '',
-      image: 'https://images.unsplash.com/photo-1683322753580-6bf07759dbfe?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://images.unsplash.com/photo-1610208738451-46dcfde84295?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       meta: 'Zanzibar, Tanzania · 3-7 Nights',
       highlights: ['🏛️ Stone Town', '🌶️ Spice Farm Tour', '🐢 Turtle Aquarium', '🤿 Snorkelling', '🏖️ East Coast Beaches', '⛵ Sunset Dhow Cruise'],
       pricing: [
