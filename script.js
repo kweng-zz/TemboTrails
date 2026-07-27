@@ -77,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: '',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc64qKfX_M6SN0z6RDpwdsElQ-f6xJbhl72TH3UQbBYg&s=10',
       meta: 'Malindi, Kenya · Full Day Tour',
-      highlights: ['🐠 Marine Park', '⛲ Vasco da Gama Pillar', '🛍️ Beach Markets', '🍤 Seafood Lunch'],
+      highlights: ['🐠 Marine Park', '⛲ Vasco da Gama Pillar', '🏜️ Mambrui Sand Dunes', '🔥 Marafa Hell\'s Kitchen', '🌉 Buntwani Bridge', '🛍️ Beach Markets', '🍤 Seafood Lunch'],
       pricing: [
-        { tier: 'Group Joining', price: 'KES 5,000', period: 'per person' },
-        { tier: 'Private Tour', price: 'KES 18,000', period: 'per group' },
-        { tier: 'Child (3-12yrs)', price: 'KES 2,800', period: 'per child' }
+        { tier: 'Kenyan Residents (Group Joining)', price: 'KES 4,999', period: 'per person' },
+        { tier: 'Non-Residents', price: 'From $70 USD', period: 'per person' },
+        { tier: 'Private Tour', price: 'From $150 USD', period: 'per person (depends on group size)' }
       ]
     },
     tsavo: {
