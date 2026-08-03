@@ -1164,6 +1164,15 @@ ul { list-style: none; }
   position: relative;
 }
 
+.about-img-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
 .about-img-main {
   border-radius: var(--radius-lg);
   overflow: hidden;
