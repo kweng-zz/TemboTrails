@@ -187,39 +187,64 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
+/* ── VIANTERRA LOGO ── */
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.7rem;
+  text-decoration: none;
 }
 
 .logo-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   display: block;
-  filter: brightness(1.1);
   flex-shrink: 0;
 }
 
 .logo-text {
-  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1;
 }
 
+/* VIANTERRA */
 .logo-main {
-  font-family: var(--font-display);
+  font-family: Arial, sans-serif;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 0.04em;
   color: var(--white);
   display: block;
+  white-space: nowrap;
 }
 
+/* HOLIDAYS & TRAVEL */
 .logo-sub {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   color: var(--gold-light);
   display: block;
+  margin-top: 6px;
+  white-space: nowrap;
+}
+
+/* Arrive and Explore! */
+.logo-tagline {
+  font-family: Georgia, serif;
+  font-size: 0.62rem;
+  font-style: italic;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  display: block;
+  margin-top: 5px;
+  white-space: nowrap;
 }
 
 .nav-links {
