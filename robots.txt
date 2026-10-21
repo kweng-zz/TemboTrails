@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Google Images and other crawlers may index the site's images.
+Sitemap: https://www.mysunsetadventures.co.ke/sitemap.xml

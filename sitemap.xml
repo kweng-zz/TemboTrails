@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.mysunsetadventures.co.ke/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/og-image.jpg</image:loc>
+      <image:title>Vianterra Holidays and Travel — luxury Kenya and East Africa travel</image:title>
+      <image:caption>Yacht cruises, coastal tours, safaris and Zanzibar escapes with Vianterra Holidays &amp; Travel.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/2.jpeg</image:loc>
+      <image:title>White-sand beach on the Kenyan coast</image:title>
+      <image:caption>Beach loungers under palm trees on the Kenyan coast.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/yacht2.jpg</image:loc>
+      <image:title>Private yacht on the Kenyan coast</image:title>
+      <image:caption>Private yacht charters and sunset cruises with Vianterra.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/wasini.jpg</image:loc>
+      <image:title>Dhow sailing near Wasini Island, Kenya</image:title>
+      <image:caption>Wasini Island dhow cruise, dolphin spotting and snorkelling tour.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/tsavopark.jpeg</image:loc>
+      <image:title>Elephants in Tsavo East National Park</image:title>
+      <image:caption>Tsavo East safari from Mombasa with Vianterra Holidays &amp; Travel.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mysunsetadventures.co.ke/images/zanzibar.jpeg</image:loc>
+      <image:title>Sea turtle in Zanzibar, Tanzania</image:title>
+      <image:caption>Zanzibar snorkelling and beach holiday packages.</image:caption>
+    </image:image>
+  </url>
+</urlset>

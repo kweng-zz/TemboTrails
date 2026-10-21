@@ -1,0 +1,32 @@
+{
+  "name": "Vianterra Holidays & Travel",
+  "short_name": "Vianterra",
+  "description": "Luxury Kenya and East Africa travel: yacht cruises, coastal tours, safaris and Zanzibar escapes.",
+  "lang": "en-KE",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#0B2545",
+  "categories": ["travel", "lifestyle"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -12,10 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.classList.toggle('open');
     const spans = hamburger.querySelectorAll('span');
     if (mobileMenu.classList.contains('open')) {
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Close menu');
       spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
       spans[1].style.opacity = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
     } else {
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
       spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     }
   });
@@ -23,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileMenu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
       hamburger.querySelectorAll('span').forEach(s => {
         s.style.transform = '';
         s.style.opacity = '';
@@ -141,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
-    const message = `Hi Sunset Adventures, I'd like to book/inquire about the ${data.name} tour.`;
+    const message = `Hi Vianterra Holidays & Travel, I'd like to book/inquire about the ${data.name} tour.`;
     modalCta.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
 
     modalOverlay.classList.add('active');
@@ -358,7 +364,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 9. SMOOTH SCROLL FOR NAV LINKS ────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if (!href || href === '#') return;
+
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
